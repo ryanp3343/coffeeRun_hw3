@@ -24,7 +24,8 @@
         });
 
         var $label = $('<label></label>');
-        var description = 'Thank you for your order, ';
+        var description = 'Thank you for your order,';
+        description += ' ' + payment.title
         description += ' ' + payment.username;
         $label.append(description);
         $div.append($label);
